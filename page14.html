@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>4.5.DHCP (Dynamic Host Configuration Protocol): - Компьютерлік тораптар</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+<meta name="generator" content="TurboSite 1.7.1" />
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="logo">
+		<h1>Компьютерлік тораптар</h1>
+		<p><em>Электрондық оқулық</em></p>
+	</div>
+	<hr />
+	<!-- end #logo -->
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li><a style="" href="index.html">Главная</a></li>
+
+			</ul>
+		</div>
+		<!-- end #menu -->
+	</div>
+	<!-- end #header -->
+	<!-- end #header-wrapper -->
+	<div id="page">
+	<div id="page-bgtop">
+		<div id="content">
+			<div class="post">
+				<h2 class="title">4.5.DHCP (Dynamic Host Configuration Protocol):</h2>
+				<div class="entry">
+				
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<STRONG>&nbsp; 
+4.5.DHCP (Dynamic Host Configuration Protocol):</STRONG></P>
+<P><STRONG>DHCP (Dynamic Host Configuration Protocol)</STRONG> — бұл 
+компьютерлік желіде құрылғыларға автоматты түрде IP мекенжайларын, субнет 
+маскаларын, шлюздерді және басқа да желілік параметрлерді тағайындайтын хаттама. 
+DHCP динамикалық түрде желіге қосылған құрылғыларға қажетті конфигурацияларды 
+қамтамасыз етеді, бұл желі әкімшісінің жұмысын жеңілдетеді және желіге 
+құрылғылар қосылуын жылдамдатады.</P>
+<H3><STRONG>DHCP қалай жұмыс істейді:</STRONG></H3>
+<OL>
+  <LI>
+  <P><STRONG>Құрылғының қосылуы</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>Жаңа құрылғы (мысалы, компьютер, смартфон немесе басқа құрылғы) желіге 
+    қосылады және ол DHCP серверінен өзіне қажетті конфигурацияны алу үшін сұрау 
+    жібереді.</P></LI></UL>
+  <LI>
+  <P><STRONG>DHCP Discover</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>Құрылғы желіге қосылған кезде <STRONG>DHCP Discover</STRONG> деп аталатын 
+    арнайы сұрау хабарламасын жібереді. Бұл хабарлама желідегі барлық DHCP 
+    серверлеріне бағытталады.</P></LI></UL>
+  <LI>
+  <P><STRONG>DHCP Offer</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP сервері бұл сұрауға жауап ретінде құрылғыға өзінің ұсынысын 
+    жібереді. Ол ұсыныс құрылғыға IP мекенжайын, субнет маскасын, шлюз 
+    мекенжайын және басқа да қажетті желілік параметрлерді қамтиды.</P></LI></UL>
+  <LI>
+  <P><STRONG>DHCP Request</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>Құрылғы алған ұсыныстардың ішінен бірін таңдап, серверге <STRONG>DHCP 
+    Request</STRONG> хабарламасын жібереді. Бұл хабарлама құрылғының қай DHCP 
+    серверінен ұсыныс қабылдағанын растайды.</P></LI></UL>
+  <LI>
+  <P><STRONG>DHCP Acknowledge</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP сервері құрылғыға оның сұрауы қабылданғанын және көрсетілген 
+    параметрлердің тағайындалғанын растау үшін <STRONG>DHCP Acknowledge</STRONG> 
+    хабарламасын жібереді.</P></LI></UL>
+  <LI>
+  <P><STRONG>IP мекенжайын пайдалану</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>Құрылғы бұл кезеңнен кейін желіде жұмыс істеу үшін тағайындалған IP 
+    мекенжайын пайдалана бастайды.</P></LI></UL></LI></OL>
+<H3><STRONG>DHCP жұмыс принципі (қадамдар):</STRONG></H3>
+<OL>
+  <LI>
+  <P><STRONG>Құрылғының қосылуы (DHCP Discover)</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>Жаңа құрылғы DHCP серверінен IP мекенжайын алу үшін арнайы хабарлама 
+    жібереді.</P></LI></UL>
+  <LI>
+  <P><STRONG>Сервердің ұсынысы (DHCP Offer)</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP сервері құрылғыға IP мекенжайын және басқа желілік параметрлерді 
+    ұсынады.</P></LI></UL>
+  <LI>
+  <P><STRONG>Құрылғының таңдау жасауы (DHCP Request)</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>Құрылғы DHCP серверінен ұсынылған IP мекенжайын қабылдайтынын 
+    хабарлайды.</P></LI></UL>
+  <LI>
+  <P><STRONG>Сервердің растауы (DHCP Acknowledge)</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP сервері құрылғыға IP мекенжайының берілуін 
+растайды.</P></LI></UL></LI></OL>
+<H3><STRONG>DHCP қолдану үшін қажетті компоненттер:</STRONG></H3>
+<OL>
+  <LI>
+  <P><STRONG>DHCP сервері</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP қызметін ұсынатын сервер немесе құрылғы. Ол желіге қосылатын 
+    құрылғыларға динамикалық түрде IP мекенжайлары мен басқа конфигурацияларды 
+    тағайындайды.</P></LI></UL>
+  <LI>
+  <P><STRONG>DHCP клиенті</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>Желідегі құрылғы (компьютер, телефон, принтер және т.б.), ол DHCP 
+    серверінен автоматты түрде желі параметрлерін алу үшін сұрау 
+    жібереді.</P></LI></UL>
+  <LI>
+  <P><STRONG>DHCP релелі (Relay)</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP сұрауларын бір желіден екінші желіге жеткізетін құрылғы немесе 
+    сервер. Егер DHCP сервері желіде басқа сегментте орналасса, релейлер бұл 
+    сұрауларды дұрыс бағыттауға көмектеседі.</P></LI></UL></LI></OL>
+<H3><STRONG>DHCP-тің артықшылықтары:</STRONG></H3>
+<OL>
+  <LI>
+  <P><STRONG>Автоматизация</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>Желідегі құрылғылардың IP мекенжайларын автоматты түрде тағайындау 
+    уақытты үнемдейді және желі әкімшілерінің жұмысын жеңілдетеді. Әр құрылғы 
+    үшін қолмен IP мекенжайын тағайындаудың қажеттілігі жойылады.</P></LI></UL>
+  <LI>
+  <P><STRONG>IP мекенжайларының тиімді басқарылуы</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP сервері IP мекенжайларын орталықтан басқаруға мүмкіндік береді. Бұл 
+    IP мекенжайларын қайта пайдалану, сондай-ақ IP мекенжайларын бөлу мен 
+    қайтару жұмыстарын оңтайландырады.</P></LI></UL>
+  <LI>
+  <P><STRONG>Ақауларды азайту</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP жүйесі арқылы дұрыс IP мекенжайлары мен басқа да конфигурацияларды 
+    автоматты түрде алу құрылғылардың желіге дұрыс қосылуын қамтамасыз етеді 
+    және желі қателерінің алдын алады.</P></LI></UL>
+  <LI>
+  <P><STRONG>Икемділік</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP сервері динамикалық түрде IP мекенжайларын тағайындайды, сондықтан 
+    желіге қосылған құрылғылардың саны өзгерсе де, сервер қажет болған жағдайда 
+    жаңа мекенжайларды ұсына алады.</P></LI></UL></LI></OL>
+<H3><STRONG>DHCP кемшіліктері:</STRONG></H3>
+<OL>
+  <LI>
+  <P><STRONG>Қауіпсіздік мәселелері</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP сервері дұрыс конфигурацияланбаған жағдайда құрылғының желіге 
+    қосылуына немесе басқа құрылғыларға қосылуына мүмкіндік беретін қауіпсіздік 
+    мәселелері туындауы мүмкін. Мысалы, <STRONG>DHCP Spoofing</STRONG> шабуылы 
+    кезінде шабуылдаушы жалған DHCP серверін құрып, құрылғыларды өзіне бағыттай 
+    алады.</P></LI></UL>
+  <LI>
+  <P><STRONG>DHCP серверінің қолжетімсіздігі</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>Егер DHCP сервері жұмыс істемесе немесе ақаулар болса, құрылғылар IP 
+    мекенжайын ала алмайды және желіге қосыла алмайды.</P></LI></UL>
+  <LI>
+  <P><STRONG>Резервті жүйенің қажеттілігі</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>Желідегі үлкен көлемде DHCP серверінің жұмысына тәуелділікті ескере 
+    отырып, резервті серверлер қажет болуы мүмкін.</P></LI></UL></LI></OL>
+<H3><STRONG>DHCP конфигурациясы</STRONG>:</H3>
+<OL>
+  <LI>
+  <P><STRONG>IP мекенжай диапазоны</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP сервері құрылғыларға тағайындайтын IP мекенжайларының ауқымын 
+    (диапазонын) белгілейді. Мысалы, сервер 192.168.1.100-ден 192.168.1.200-ге 
+    дейінгі мекенжайларды құрылғыларға тағайындай алады.</P></LI></UL>
+  <LI>
+  <P><STRONG>Динамикалық немесе тұрақты тағайындау</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP сервері динамикалық IP мекенжайларын ұсына алады, сондай-ақ белгілі 
+    бір құрылғыларға тұрақты мекенжайларды (құрылғының MAC мекенжайы арқылы) да 
+    тағайындай алады.</P></LI></UL>
+  <LI>
+  <P><STRONG>Жалдау мерзімі</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP сервері әр құрылғыға берілген IP мекенжайының уақытша болуын 
+    қамтамасыз етеді. Жалдау мерзімі аяқталған соң, IP мекенжайы қайтадан басқа 
+    құрылғыға берілуі мүмкін.</P></LI></UL>
+  <LI>
+  <P><STRONG>DNS және шлюз параметрлері</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP сервері тек IP мекенжайын ғана емес, сонымен қатар <STRONG>DNS 
+    серверінің</STRONG> мекенжайы, <STRONG>шлюз</STRONG> (gateway) және басқа 
+    желілік параметрлерді де ұсына алады.</P></LI></UL></LI></OL>
+<H3><STRONG>DHCP қолдану мысалдары:</STRONG></H3>
+<OL>
+  <LI>
+  <P><STRONG>Үй желілері</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>Көптеген үй желілерінде маршрутизатор DHCP сервері болып табылады. Бұл 
+    құрылғыларға (компьютерлер, смартфондар, принтерлер) автоматты түрде IP 
+    мекенжайларын тағайындайды.</P></LI></UL>
+  <LI>
+  <P><STRONG>Кәсіби және корпоративті желілер</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>DHCP корпоративті желілерде де кеңінен қолданылады. Бұл желілерде жұмыс 
+    станцияларына, серверлерге, принтерлерге және басқа құрылғыларға автоматты 
+    түрде IP мекенжайларын беру жұмысты оңтайландырады.</P></LI></UL>
+  <LI>
+  <P><STRONG>Wi-Fi желілері</STRONG>:</P>
+  <UL>
+    <LI>
+    <P>Көптеген Wi-Fi желілерінде мобильді құрылғыларға (телефондар, планшеттер) 
+    автоматты түрде IP мекенжайларын тағайындау үшін DHCP 
+  қолданылады.</P></LI></UL></LI></OL>
+<H3><STRONG>Қорытынды</STRONG>:</H3>
+<P><STRONG>DHCP</STRONG> — бұл желі құрылғыларына автоматты түрде IP 
+мекенжайлары мен басқа желілік параметрлерді тағайындау үшін қолданылатын өте 
+пайдалы хаттама. Бұл желі әкімшілеріне жұмысын жеңілдетуге және желіге қосылған 
+құрылғыларды басқаруды оңайлатуға мүмкіндік береді. Бірақ қауіпсіздік тұрғысынан 
+ол кейбір тәуекелдерге ұшырауы мүмкін, сондықтан оны дұрыс конфигурациялау және 
+қауіпсіздік шараларын сақтау маңызды.</P>
+
+				</div>
+			</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h2></h2>
+					<ul>
+						<li><a style="" href="page1.html">МАЗМҰНЫ</a></li>
+<li><a style="" href="page2.html">1.1.Тораптың анықтамасы,1.2.Тораптардың маңызы мен қажеттілігі</a></li>
+<li><a style="" href="page3.html">2.1. Жергілікті аймақтық торап (LAN)</a></li>
+<li><a style="" href="page4.html">2.3.Жаһандық аймақтық торап (WAN)</a></li>
+<li><a style="" href="page5.html">2.4.Персоналды аймақтық торап (PAN)</a></li>
+<li><a style="" href="page6.html">3.1.Жұлдызды топология</a></li>
+<li><a style="" href="page7.html">3.2.Сызықтық топология</a></li>
+<li><a style="" href="page8.html">3.3.Сақина топологиясы</a></li>
+<li><a style="" href="page9.html">3.4.Ағаш топологиясы</a></li>
+<li><a style="" href="page10.html">4.1.TCP/IP (Transmission Control Protocol/Internet Protocol):</a></li>
+<li><a style="" href="page11.html">4.2.HTTP (HyperText Transfer Protocol):</a></li>
+<li><a style="" href="page12.html">4.3.FTP (File Transfer Protocol):</a></li>
+<li><a style="" href="page13.html">4.4.DNS (Domain Name System):</a></li>
+<li class="active"><a style="" href="page14.html">4.5.DHCP (Dynamic Host Configuration Protocol):</a></li>
+<li><a style="" href="page15.html">4.6.SNMP (Simple Network Management Protocol):</a></li>
+<li><a style="" href="page16.html">5.1.Маршрутизатор</a></li>
+<li><a style="" href="page17.html">5.2.Коммутатор</a></li>
+<li><a style="" href="page18.html">5.3.Қосқыш (Hub)</a></li>
+<li><a style="" href="page19.html">5.4.Модем</a></li>
+<li><a style="" href="page20.html">5.5.Шлюз</a></li>
+<li><a style="" href="page21.html">6.1.Шифрлау</a></li>
+<li><a style="" href="page22.html">6.1.Шифрлау</a></li>
+<li><a style="" href="page23.html">6.3.Аутентификация</a></li>
+<li><a style="" href="page24.html">6.4.Вирустар мен зиянды бағдарламаларға қарсы қорғаныс</a></li>
+<li><a style="" href="page25.html">7.1.Желі мониторингі</a></li>
+<li><a style="" href="page26.html">7.2.Қателерді табу және жөндеу</a></li>
+<li><a style="" href="page27.html">8.1.VPN (Virtual Private Network)</a></li>
+<li><a style="" href="page28.html">8.2.SSL/TLS</a></li>
+<li><a style="" href="page29.html">8.3.IPSec</a></li>
+<li><a style="" href="page30.html">9.1.Тораптың қажеттіліктерін талдау</a></li>
+<li><a style="" href="page31.html">9.2.Масштабтау</a></li>
+<li><a style="" href="page32.html">9.3.Тораптың шығындары мен өнімділігі</a></li>
+<li><a style="" href="page33.html">Компьютерлік тораптар қысқаша тест</a></li>
+
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	<!-- end #page -->
+	<div id="footer-bgcontent">
+	<div id="footer">
+		<p>Авторы:Раимбек Айдос | <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> | <a href="http://brullworfel.ru/turbosite">TurboSite</a></p>
+	</div>
+	</div>
+	<!-- end #footer -->
+</div>
+</body>
+</html>
